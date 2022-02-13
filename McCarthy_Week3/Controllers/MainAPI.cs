@@ -6,6 +6,7 @@ namespace McCarthy_Week3.Controllers
 {
     [ApiController]
     [Route("[controller]")]
+    //Week5 Adding to github.
     public class MainAPI : ControllerBase
     {
 
@@ -41,8 +42,14 @@ namespace McCarthy_Week3.Controllers
                     {
                         slist.Add("list too small!");
                     }
+
                 
-                
+
+                LogObject(i);
+            }
+            static void LogObject(int lint)
+            {
+                System.Diagnostics.Debug.WriteLine(lint);
             }
 
             return slist;
